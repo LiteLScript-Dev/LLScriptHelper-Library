@@ -1,5 +1,5 @@
 # LxlDevHelper
-![](\images\sc1.png)
+![](images/sc1.png)
 ~~~
 - 提供LXLApi的本地化注解，参数解释
 - 对应LXL官方开发文档，持续更新此项目
