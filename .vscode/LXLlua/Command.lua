@@ -63,3 +63,4 @@ function mc.regConsoleCmd(cmd,description,callback) end
 ---@param output string 模拟产生的命令输出
 ---@return boolean 是否成功执行
 function mc.sendCmdOutput(output) end
+

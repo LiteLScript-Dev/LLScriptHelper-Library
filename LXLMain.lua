@@ -1,3 +1,7 @@
 mc.regPlayerCmd()
 mc.runcmdEx()
 mc.regConsoleCmd()
+mc.sendCmdOutput()
+mc.sendCmdOutput()
+mc.sendCmdOutput()
+mc.getPlayer()
