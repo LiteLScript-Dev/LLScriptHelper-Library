@@ -1,6 +1,0 @@
-mc.regPlayerCmd()
-mc.runcmdEx()
-mc.regConsoleCmd()
-mc.sendCmdOutput()
-local pl = mc.getPlayer()
-pl.kick()

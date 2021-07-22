@@ -12,7 +12,7 @@ function mc.runcmd(cmd) end
 
 ---执行一条后台命令（强化版）
 ---@param cmd string 待执行的命令
----@return table 命令执行结果
+---@return ResTable 命令执行结果
 -- - 对于返回的某个执行结果对象res,有如下成员：  
 ---
 --- ```
@@ -25,15 +25,12 @@ function mc.runcmd(cmd) end
 function mc.runcmdEx(cmd) end
 
 
----@alias levelmode
----|>'0'   # --- '即所有人都可以执行'
----| '1'   # --- '只有OP可以执行此命令'
 
 ---注册一个新的玩家命令
 ---@param cmd string 待注册的命令
 ---@param description string 命令描述文本
 ---@param callback function 接口自动调用的回调函数
----
+--- 
 --- ```
 --- function(player,args)
 --- player : Player 
@@ -46,7 +43,8 @@ function mc.runcmdEx(cmd) end
 ---@return boolean 是否成功注册
 ---[文档](https://lxl.litetitle.com/#/zh_CN/Development/GameAPI/Command)
 --- | LiteXLoader 命令相关
-function mc.regPlayerCmd(cmd,description,callback,level) end
+function mc.regPlayerCmd(cmd,description,callback,level) 
+end
 
 ---注册一个新的后台控制台命令
 ---@param cmd string 待注册的命令
@@ -67,5 +65,7 @@ function mc.regConsoleCmd(cmd,description,callback) end
 ---模拟产生一个控制台命令输出
 ---@param output string 模拟产生的命令输出
 ---@return boolean 是否成功执行
+---[文档](https://lxl.litetitle.com/#/zh_CN/Development/GameAPI/Command)
+---LiteXLoader 命令相关
 function mc.sendCmdOutput(output) end
 
