@@ -1,13 +1,17 @@
 
+---系统对象
+---@class system
+system = {}
+
 ---时间对象
 ---@class Time
----@field Y Number 年份数值（4位）
----@field M Number 月份数值
----@field D Number 天数数值
----@field h Number 小时数值（24小时制）
----@field m Number 分钟数值
----@field s Number 秒数值
----@field ms Number 毫秒数值
+---@field Y number 年份数值（4位）
+---@field M number 月份数值
+---@field D number 天数数值
+---@field h number 小时数值（24小时制）
+---@field m number 分钟数值
+---@field s number 秒数值
+---@field ms number 毫秒数值
 Time ={}
 
 ---获取当前时间字符串

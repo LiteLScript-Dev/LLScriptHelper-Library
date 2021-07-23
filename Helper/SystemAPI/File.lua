@@ -1,3 +1,6 @@
+---文件对象
+---@class file
+file = {}
 
 ---读入文件所有内容
 ---@param path string 目标文件的路径，相对路径以BDS根目录为基准

@@ -1,4 +1,8 @@
 
+---网络对象
+---@class network
+network = {}
+
 ---发送一个异步HTTP(s) Get请求
 ---@param url string 请求的目标地址
 ---@param callback function 当请求返回时执行的回调函数
@@ -33,4 +37,4 @@ function network.httpGet(url,callback) end
 ---@return boolean 是否成功发送请求
 ---[文档](https://lxl.litetitle.com/#/zh_CN/Development/SystemAPI/Network)
 ---LiteXLoader - 系统功能接口
-function network.httpGet(url,callback) end
+function network.httpGet(url,data,type,callback) end
