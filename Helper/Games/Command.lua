@@ -26,10 +26,13 @@ function mc.runcmdEx(cmd) end
 
 
 
+
+
+
 ---注册一个新的玩家命令
 ---@param cmd string 待注册的命令
 ---@param description string 命令描述文本
----@param callback function 接口自动调用的回调函数
+---@param callback fun(player:Player,table:table) 接口自动调用的回调函数
 --- 
 --- ```
 --- function(player,args)
@@ -43,13 +46,14 @@ function mc.runcmdEx(cmd) end
 ---@return boolean 是否成功注册
 ---[文档](https://lxl.litetitle.com/#/zh_CN/Development/GameAPI/Command)
 --- | LiteXLoader 命令相关
-function mc.regPlayerCmd(cmd,description,callback,level) 
+function mc.regPlayerCmd(cmd,description,callback,level)
 end
+
 
 ---注册一个新的后台控制台命令
 ---@param cmd string 待注册的命令
 ---@param description string 命令描述文本
----@param callback function 接口自动调用的回调函数
+---@param callback fun(table:table) 接口自动调用的回调函数
 ---
 --- ```
 --- function(args)
