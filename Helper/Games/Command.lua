@@ -16,7 +16,7 @@ function mc.runcmd(cmd) end
 -- - 对于返回的某个执行结果对象res,有如下成员：  
 ---
 --- ```
---- res.result -> boolean --是否执行成功
+--- res.success -> boolean --是否执行成功
 --- res.output -> string --BDS执行命令后的输出结果
 --- ```
 ---

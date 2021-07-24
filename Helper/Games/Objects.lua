@@ -35,7 +35,7 @@ function mc.newIntPos(x,y,z,dimid) end
 float = {}
 
 ---@class ResTable
----@field result boolean 是否执行成功
+---@field success boolean 是否执行成功
 ---@field output string BDS执行命令后的输出结果
 ResTable = {}
 
