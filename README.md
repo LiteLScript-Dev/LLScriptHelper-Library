@@ -1,22 +1,3 @@
 # LXL Dev Helper (Lua)
-![](https://img.shields.io/github/stars/moxicode/LXLDevHelper) ![](https://img.shields.io/github/forks/moxicode/LXLDevHelper) ![](https://img.shields.io/github/issues/moxicode/LXLDevHelper) ![](https://img.shields.io/github/license/moxicode/LXLDevHelper)
-
-### Install In VsCode
-https://marketplace.visualstudio.com/items?itemName=moxicat.lxldev-lua
-
-![](example.gif)
-
-### Features
- - Auto completion
- - Document annotation
- - Long-term update
- - Development assistance
- - Commissioning
- - and more...
-
- ### Depends
- - [sumneko.lua](https://marketplace.visualstudio.com/items?itemName=sumneko.lua)
-
- ### Feedback
-  - [Github Issue](https://github.com/moxicode/LXLDevHelper/issues)
-  - [Pull Request](https://github.com/moxicode/LXLDevHelper/pulls)
+![](https://ftp.bmp.ovh/imgs/2021/07/330e4ee02ded7b58.png)
+# 欢迎您的使用
