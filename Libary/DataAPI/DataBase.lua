@@ -7,7 +7,7 @@ db = {}
 ---@return db 如果返回值为`Null`，则代表创建 / 打开失败
 ---[文档](https://lxl.litetitle.com/#/zh_CN/Development/DataAPI/DataBase)
 ---LiteXLoader - 配置与数据处理接口
-function db.openDB(dir) end
+function data.openDB(dir) end
 
 ---写入数据项
 ---@param name string 数据项名字
@@ -15,33 +15,33 @@ function db.openDB(dir) end
 ---@return boolean 是否写入成功
 ---[文档](https://lxl.litetitle.com/#/zh_CN/Development/DataAPI/DataBase)
 ---LiteXLoader - 配置与数据处理接口
-function db.set(name, data) end
+function db:set(name, data) end
 
 ---读取数据项
 ---@param name string 数据项名字
 ---@return any 数据库中储存的这个项的数据
 ---[文档](https://lxl.litetitle.com/#/zh_CN/Development/DataAPI/DataBase)
 ---LiteXLoader - 配置与数据处理接口
-function db.get(name) end
+function db:get(name) end
 
 ---删除数据项
 ---@param name string 数据项名字
 ---@return boolean 是否成功删除
 ---[文档](https://lxl.litetitle.com/#/zh_CN/Development/DataAPI/DataBase)
 ---LiteXLoader - 配置与数据处理接口
-function db.delete(name) end
+function db:delete(name) end
 
 ---获取所有数据项名字
 ---@return KeyArray 所有的数据项名字数组
 ---[文档](https://lxl.litetitle.com/#/zh_CN/Development/DataAPI/DataBase)
 ---LiteXLoader - 配置与数据处理接口
-function db.listKey() end
+function db:listKey() end
 
 ---关闭数据库
 ---@return boolean 是否成功关闭
 ---[文档](https://lxl.litetitle.com/#/zh_CN/Development/DataAPI/DataBase)
 ---LiteXLoader - 配置与数据处理接口
-function db.close() end
+function db:close() end
 
 ---@class KeyArray
 KeyArray = {string,string,string,...}
