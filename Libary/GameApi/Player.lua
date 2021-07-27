@@ -2,8 +2,8 @@
 ---获取所有在线玩家的列表
 ---
 ---此函数会返回一个玩家对象的数组，其中每个对象都对应了一个服务器中的玩家
----@return table
-function mc:getOnlinePlayers() return table end
+---@return PlayerTable
+function mc.getOnlinePlayers() return table end
 
 
 ---@param info string 玩家的名字或者Xuid
@@ -30,7 +30,7 @@ Player = {}
 ---@return boolean 玩家是否为OP
 ---[文档](https://lxl.litetitle.com/#/zh_CN/Development/GameAPI/Player)
 ---LiteXLoader 玩家相关
-function Player:isOP() end
+function Player.isOP() end
 
 ---断开玩家连接
 ---@param msg? string 被踢出玩家出显示的断开原因

@@ -2,7 +2,7 @@
 ---@field x float x 坐标
 ---@field y float y 坐标
 ---@field z float z 坐标
----@field dim string 维度文字名	
+---@field dim string 维度文字名
 ---@field dimid float 维度ID
 FloatPos = {}
 
@@ -12,14 +12,14 @@ FloatPos = {}
 ---@param z float z 坐标
 ---@param dimid dimid 维度ID
 ---@return FloatPos
-function mc.newFloatPos(x,y,z,dimid) end
-
+function mc.newFloatPos(x, y, z, dimid)
+end
 
 ---@class IntPos
 ---@field x number x 坐标
 ---@field y number y 坐标
 ---@field z number z 坐标
----@field dim string 维度文字名	
+---@field dim string 维度文字名
 ---@field dimid number 维度ID
 
 ---生成一个浮点数坐标对象
@@ -28,8 +28,8 @@ function mc.newFloatPos(x,y,z,dimid) end
 ---@param z number z 坐标
 ---@param dimid dimid 维度ID
 ---@return IntPos
-function mc.newIntPos(x,y,z,dimid) end
-
+function mc.newIntPos(x, y, z, dimid)
+end
 
 ---@class float 浮点型小数
 float = {}
@@ -38,6 +38,9 @@ float = {}
 ---@field success boolean 是否执行成功
 ---@field output string BDS执行命令后的输出结果
 ResTable = {}
+
+---@class PlayerTable
+PlayerTable = {Player,Player,...}
 
 ---@alias levelmode
 ---|>'0'   # --- '普通成员权限'
@@ -55,9 +58,7 @@ ResTable = {}
 ---| '1'   # --- '创造模式'
 ---| '2'   # --- '极限模式'
 
-
 ---@alias dimid
 ---|>'0'   # --- '主世界'
 ---| '1'   # --- '下界'
 ---| '2'   # --- '末地'
-
