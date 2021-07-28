@@ -23,6 +23,7 @@
 ---| '"onMove"'   # --- '玩家移动'
 ---| '"onSetArmor"'   # --- '玩家改变盔甲栏'
 ---| '"onUseRespawnAnchor"'   # --- '玩家使用重生锚'
+---| '"onPlayerDie"' # --- '玩家死亡事件'
 
 
 ---新增监听器
