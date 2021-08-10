@@ -30,3 +30,14 @@ jobs:
       run: java -jar Generate.jar
     - name: ls
       run: ls
+    - name: commit
+      run: |
+        git config --global user.email 3601594248@qq.com
+        git config --global user.name moxicat
+        git add Library
+        git commit -m "update" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
