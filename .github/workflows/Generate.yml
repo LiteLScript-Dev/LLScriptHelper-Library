@@ -27,6 +27,11 @@ jobs:
       run: java -jar Generate.jar
     - name: ls
       run: ls
+    - name: zip
+      uses: papeloto/action-zip@v1
+      with:
+        files: Library
+        dest: Library.zip
     - name: commit
       run: |
         git config --global user.email 3601594248@qq.com
