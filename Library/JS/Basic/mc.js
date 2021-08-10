@@ -32,7 +32,7 @@ class mc {
 
 /**
  * 执行一条后台命令（强化版）
- * @param {String} cmd 
+ * @param {String} cmd 指令内容
  * @returns {ObjectRuncmdEx} 命令执行结果Object
  */
  static runcmdEx(cmd)

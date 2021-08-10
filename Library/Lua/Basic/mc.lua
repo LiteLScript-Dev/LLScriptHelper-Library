@@ -23,7 +23,7 @@ function mc.runcmd(cmd)
 end
 
 ---执行一条后台命令（强化版）
----@param cmd String 
+---@param cmd String 指令内容
 ---@return ObjectRuncmdEx 命令执行结果Object
 function mc.runcmdEx(cmd)
 end
