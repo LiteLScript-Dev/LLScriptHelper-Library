@@ -8,4 +8,4 @@ https://github.com/LiteLDev-LXL/LXLDevHelper-VsCode
 - LXLDevHelper-DocSrc
 https://github.com/LiteLDev-LXL/LXLDevHelper-DocSrc
 
-1
+0.3.1
