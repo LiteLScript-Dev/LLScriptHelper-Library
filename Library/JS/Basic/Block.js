@@ -5,17 +5,17 @@ class Block {
   
 /**
  * 游戏内显示的方块名称
- * @type String
+ * @type string
  */ 
  name;
 /**
  * 方块标准类型名	
- * @type String
+ * @type string
  */ 
  type;
 /**
  * 方块的游戏内id
- * @type Integer
+ * @type number
  */ 
  id;
 /**
@@ -36,7 +36,7 @@ class Block {
 /**
  * 写入方块对应的NBT对象
  * @param {NbtCompound} nbt NBT对象
- * @returns {Boolean} 是否成功写入
+ * @returns {boolean} 是否成功写入
  */
  setNbt(nbt)
 

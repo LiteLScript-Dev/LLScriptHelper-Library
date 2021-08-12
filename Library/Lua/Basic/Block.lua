@@ -1,7 +1,7 @@
 ---@class Block 方块对象 
----@field name String String
----@field type String String
----@field id Integer Integer
+---@field name string string
+---@field type string string
+---@field id number number
 ---@field pos IntPos IntPos
  Block = {}
 
@@ -13,7 +13,7 @@ end
 
 ---写入方块对应的NBT对象
 ---@param nbt NbtCompound NBT对象
----@return Boolean 是否成功写入
+---@return boolean 是否成功写入
 function Block:setNbt(nbt)
 end
 

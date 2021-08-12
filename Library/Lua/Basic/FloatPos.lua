@@ -3,6 +3,6 @@
 ---@field x Float Float
 ---@field y Float Float
 ---@field z Float Float
----@field dim String String
----@field dimid Integer Integer
+---@field dim string string
+---@field dimid number number
  FloatPos = {}

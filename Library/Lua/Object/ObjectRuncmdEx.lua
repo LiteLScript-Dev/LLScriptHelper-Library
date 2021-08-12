@@ -1,4 +1,4 @@
 ---@class ObjectRuncmdEx mc.runcmdEx的返回结果 
----@field success Boolean Boolean
----@field output String String
+---@field success boolean boolean
+---@field output string string
  ObjectRuncmdEx = {}
