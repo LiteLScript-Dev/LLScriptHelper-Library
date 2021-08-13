@@ -40,7 +40,7 @@ jobs:
     - name: Commit files
       run: |
         git config --local user.email "3601594248@qq.com"
-        git config --local user.name "moxicat"
+        git config --local user.name "github-actions[bot]"
         git add Library.zip
         git commit -m "Add changes" -a
     - name: Push changes
