@@ -54,7 +54,7 @@ jobs:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
         source_folder: 'Builds'
-        destination_repo: 'LiteLDev-LXL/Update'
+        destination_repo: 'LiteLDev-LXL/Update@main'
         destination_folder: 'Helper'
         user_email: '3601594248@qq.com'
         user_name: 'moxicode'
