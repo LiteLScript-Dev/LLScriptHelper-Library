@@ -48,15 +48,15 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
-    - name: Pushes test files
-      uses: dmnemec/copy_file_to_another_repo_action@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+    - name: Commit files
+      run: |
+        git config --local user.email "3601594248@qq.com"
+        git config --local user.name "moxicat"
+        git add Library.jar
+        git commit -m "Add changes" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
       with:
-        source_file: 'Library.zip'
-        destination_repo: 'LiteLDev-LXL/Update'
-        destination_folder: 'Helper'
-        user_email: '3601594248@qq.com'
-        user_name: 'moxicat'
-        commit_message: 'A custom message for the commit'
-       
+        github_token: ${{ secrets.API_TOKEN_GITHUB }}
+        branch: ${{ github.ref }}
+        repository: "LiteLDev-LXL/Update"
