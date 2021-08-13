@@ -48,11 +48,15 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
-    - name: Publish
-      uses: s0/git-publish-subdir-action@master
+    - name: Pushes test folder
+      uses: datalbry/copy_folder_to_another_repo_action@1.0.0
       env:
-        REPO: git@github.com:LiteLDev-LXL/Update.git
-        BRANCH: main
-        FOLDER: Builds
-        SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source_folder: 'Builds'
+        destination_repo: 'LiteLDev-LXL/Update'
+        destination_folder: 'Helper'
+        user_email: '3601594248@qq.com'
+        user_name: 'moxicode'
+        commit_msg: '[GHA] Update the test files.'
        
