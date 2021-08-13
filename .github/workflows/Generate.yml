@@ -32,6 +32,11 @@ jobs:
       with:
         files: Library
         dest: Library.zip
+    - name: Move to folder
+      run: |
+        mkdir Builds
+        cp Library.zip Builds/Library.zip
+        
     - name: commit
       run: |
         git config --global user.email 3601594248@qq.com
