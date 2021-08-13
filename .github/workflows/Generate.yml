@@ -48,16 +48,15 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
-    - name: Pushes test folder
-      uses: datalbry/copy_folder_to_another_repo_action@1.0.0
+    - name: Pushes test file
+      uses: dmnemec/copy_file_to_another_repo_action@main
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
-        source_folder: 'Builds'
+        source_file: 'Library.zip'
         destination_repo: 'LiteLDev-LXL/Update'
         destination_folder: 'Helper'
-        destination_branch: 'main'
         user_email: '3601594248@qq.com'
-        user_name: 'LiteLDev-LXL'
-        commit_msg: '[GHA] Update the test files.'
+        user_name: 'moxicode'
+        commit_message: 'A custom message for the commit'
        
