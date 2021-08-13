@@ -34,7 +34,6 @@ jobs:
         dest: Library.zip
     - name: Move to folder
       run: |
-        mkdir Builds
         cp Library.zip Builds/Library.zip
         
     - name: commit
@@ -48,16 +47,6 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
-    - name: Purge version
-      uses: fjogeleit/http-request-action@v1.8.0
-      with:
-        url: "https://purge.jsdelivr.net/gh/LiteLDev-LXL/version/Helper-Library.json"
-        method: GET
-    - name: Purge file
-      uses: fjogeleit/http-request-action@v1.8.0
-      with:
-        url: "https://purge.jsdelivr.net/gh/LiteLDev-LXL/LXLDevHelper-Library/Library.zip"
-        method: GET
     - name: publish
       uses: s0/git-publish-subdir-action@master
       env:
