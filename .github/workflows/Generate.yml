@@ -52,6 +52,6 @@ jobs:
       env:
         REPO: git@github.com:LiteLDev-LXL/Update.git
         BRANCH: main
-        FOLDER: Builds       
-        SSH_PRIVATE_KEY: ${{ secrets.publish }}
+        FOLDER: Builds
+        SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
        
