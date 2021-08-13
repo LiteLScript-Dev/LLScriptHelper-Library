@@ -58,6 +58,6 @@ jobs:
         destination_folder: 'Helper'
         destination_branch: 'main'
         user_email: '3601594248@qq.com'
-        user_name: 'moxicode'
+        user_name: 'moxicat'
         commit_msg: '[GHA] Update the test files.'
        
