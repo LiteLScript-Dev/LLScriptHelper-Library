@@ -1,10 +1,9 @@
----@class Block 方块对象 
----@field name string string
----@field type string string
----@field id number number
+---方块对象\n---@class Block 
+---@field name String String
+---@field type String String
+---@field id Integer Integer
 ---@field pos IntPos IntPos
  Block = {}
-
 
 ---获取方块对应的NBT对象
 ---@return NbtCompound 方块的NBT对象

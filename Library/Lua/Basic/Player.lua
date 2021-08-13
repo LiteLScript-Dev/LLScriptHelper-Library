@@ -1,2 +1,2 @@
----@class Player  
+---\n---@class Player 
  Player = {}

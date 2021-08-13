@@ -6,27 +6,27 @@ class IntPos {
   
 /**
  * x 坐标
- * @type number
+ * @type Integer
  */ 
  x;
 /**
  * y 坐标
- * @type number
+ * @type Integer
  */ 
  y;
 /**
  * z 坐标
- * @type number
+ * @type Integer
  */ 
  z;
 /**
  * 维度文字名
- * @type string
+ * @type String
  */ 
  dim;
 /**
  * 维度ID
- * @type number
+ * @type Integer
  */ 
  dimid;
   

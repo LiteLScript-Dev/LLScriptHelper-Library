@@ -1,2 +1,2 @@
----@class Entity  
+---\n---@class Entity 
  Entity = {}

@@ -5,17 +5,17 @@ class Block {
   
 /**
  * 游戏内显示的方块名称
- * @type string
+ * @type String
  */ 
  name;
 /**
  * 方块标准类型名	
- * @type string
+ * @type String
  */ 
  type;
 /**
  * 方块的游戏内id
- * @type number
+ * @type Integer
  */ 
  id;
 /**

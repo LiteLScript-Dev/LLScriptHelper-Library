@@ -21,12 +21,12 @@ class FloatPos {
  z;
 /**
  * 维度文字名
- * @type string
+ * @type String
  */ 
  dim;
 /**
  * 维度ID
- * @type number
+ * @type Integer
  */ 
  dimid;
   
