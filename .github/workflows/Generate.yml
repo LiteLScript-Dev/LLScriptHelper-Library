@@ -41,7 +41,7 @@ jobs:
         git config --global user.email 3601594248@qq.com
         git config --global user.name moxicat
         git add *
-        git commit -m "update" -a
+        git commit -m "update and generate" -a
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
