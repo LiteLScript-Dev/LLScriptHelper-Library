@@ -57,6 +57,6 @@ jobs:
         destination_repo: 'LiteLDev-LXL/Update'
         destination_folder: 'Helper'
         user_email: '3601594248@qq.com'
-        user_name: 'moxicode'
+        user_name: 'moxicat'
         commit_message: 'A custom message for the commit'
        
