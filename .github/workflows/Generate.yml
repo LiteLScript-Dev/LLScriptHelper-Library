@@ -24,7 +24,9 @@ jobs:
        file-url: "https://github.com/LiteLDev-LXL/LXLDevHelper-generate/raw/master/Generate.jar"
        file-name: "Generate.jar"
     - name: Run jar
-      run: java -jar Generate.jar
+      run: |
+        rm -rf Library/*
+        java -jar Generate.jar
     - name: ls
       run: ls
     - name: zip
@@ -35,7 +37,6 @@ jobs:
     - name: Move to folder
       run: |
         cp Library.zip Builds/Library.zip
-        
     - name: commit
       run: |
         git config --global user.email 3601594248@qq.com
