@@ -16,27 +16,27 @@ class mc {
  * @param {number} dimid  维度ID：0 代表主世界，1 代表下界，2 代表末地
  * @returns {FloatPos} 一个浮点数坐标对象
  */
- static newFloatPos(x,y,z,dimid )
+ function newFloatPos(x,y,z,dimid )
 
 /**
  * 获取BDS服务端版本号
  * @returns {string} 服务端版本号字符串，格式形如v1.17.10
  */
- static getBDSVersion()
+ function getBDSVersion()
 
 /**
  * 执行一条后台命令
  * @param {string} cmd 待执行的命令
  * @returns {boolean} 是否执行成功
  */
- static runcmd(cmd)
+ function runcmd(cmd)
 
 /**
  * 执行一条后台命令（强化版）
  * @param {string} cmd 指令内容
  * @returns {ObjectRuncmdEx} 命令执行结果Object
  */
- static runcmdEx(cmd)
+ function runcmdEx(cmd)
 
 /**
  * 通过方块坐标手动生成方块对象
@@ -46,7 +46,7 @@ class mc {
 注意：不要长期保存一个方块对象
 当方块对象对应的方块被销毁时，对应的方块对象将变得无效。因此，如果有长期操作某个方块的需要，请通过上述途径获取实时的方块对象
  */
- static getBlock(pos)
+ function getBlock(pos)
 
 /**
  * 通过方块坐标手动生成方块对象
@@ -59,7 +59,7 @@ class mc {
 注意：不要长期保存一个方块对象
 当方块对象对应的方块被销毁时，对应的方块对象将变得无效。因此，如果有长期操作某个方块的需要，请通过上述途径获取实时的方块对象
  */
- static getBlock(x,y,z,dimid)
+ function getBlock(x,y,z,dimid)
 
 /**
  * 设置指定位置的方块
@@ -67,7 +67,7 @@ class mc {
  * @param {Block|string} block 要设置成的方块对象或者方块名
  * @returns {boolean} 是否成功设置
  */
- static setBlock(pos,block)
+ function setBlock(pos,block)
 
 /**
  * 设置指定位置的方块
@@ -81,7 +81,7 @@ class mc {
  * @param {Block|string} block 要设置成的方块对象或者方块名
  * @returns {boolean} 是否成功设置
  */
- static setBlock(x,y,z,dimid,block)
+ function setBlock(x,y,z,dimid,block)
 
 /**
  * 在指定位置生成粒子效果
@@ -89,7 +89,7 @@ class mc {
  * @param {string} type 要生成的粒子效果名称（可查阅wiki得知）
  * @returns {boolean} 是否成功生成
  */
- static spawnParticle(pos,type)
+ function spawnParticle(pos,type)
 
 /**
  * 在指定位置生成粒子效果
@@ -99,7 +99,7 @@ class mc {
  * @param {string} type 要生成的粒子效果名称（可查阅wiki得知）
  * @returns {boolean} 是否成功生成
  */
- static spawnParticle(x,y,z,type)
+ function spawnParticle(x,y,z,type)
 
 /**
  * 注册一个新的玩家命令
@@ -109,7 +109,7 @@ class mc {
  * @param {number} level （可选参数）命令的注册等级，默认为 0 ，即所有人都可以执行
  * @returns {boolean} 是否成功注册
  */
- static regPlayerCmd(cmd,description,callback,level)
+ function regPlayerCmd(cmd,description,callback,level)
 
 /**
  * 注册一个新的后台控制台命令
@@ -118,14 +118,14 @@ class mc {
  * @param {(args:Array@string)boolean} callback 注册的这个命令被执行时，接口自动调用的回调函数
  * @returns {boolean} 是否成功注册
  */
- static regConsoleCmd(cmd,description,callback)
+ function regConsoleCmd(cmd,description,callback)
 
 /**
  * 模拟产生一个控制台命令输出
  * @param {string} output 模拟产生的命令输出
  * @returns {boolean} 是否成功执行
  */
- static sendCmdOutput(output)
+ function sendCmdOutput(output)
 
 
 
@@ -144,7 +144,7 @@ class mc {
  * @param {(player:Player)function} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -160,7 +160,7 @@ class mc {
  * @param {(player:Player)function} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -176,7 +176,7 @@ class mc {
  * @param {(player:Player)function} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -192,7 +192,7 @@ class mc {
  * @param {(player:Player)function} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -208,7 +208,7 @@ class mc {
  * @param {(player:Player)function} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -224,7 +224,7 @@ class mc {
  * @param {(player:Player,cmd:string)boolean} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -240,7 +240,7 @@ class mc {
  * @param {(player:Player,msg:string)boolean} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -256,7 +256,7 @@ class mc {
  * @param {(player:Player)function} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -272,7 +272,7 @@ class mc {
  * @param {(player:Player)function} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -288,7 +288,7 @@ class mc {
  * @param {(player:Player,isSneaking:boolean)function} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -304,7 +304,7 @@ class mc {
  * @param {(player:Player,entity:Entity)boolean} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -320,7 +320,7 @@ class mc {
  * @param {(player:Player,item:Item)boolean} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -336,7 +336,7 @@ class mc {
  * @param {(player:Player,item:Item,block:Block)boolean} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -352,7 +352,7 @@ class mc {
  * @param {(player:Player,entity:Entity)boolean} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -368,7 +368,7 @@ class mc {
  * @param {(player:Player,item:Item)boolean} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -384,7 +384,7 @@ class mc {
  * @param {(player:Player,item:Item)function} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -400,7 +400,7 @@ class mc {
  * @param {(player:Player,block:Block)function} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -416,7 +416,7 @@ class mc {
  * @param {(player:Player,block:Block)boolean} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -432,7 +432,7 @@ class mc {
  * @param {(player:Player,block:Block)boolean} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -448,7 +448,7 @@ class mc {
  * @param {(player:Player,block:Block)boolean} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -464,7 +464,7 @@ class mc {
  * @param {(player:Player,block:Block)boolean} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -480,7 +480,7 @@ class mc {
  * @param {(player:Player,slotNum:number,oldItem:Item,newItem:Item)function} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -496,7 +496,7 @@ class mc {
  * @param {(player:Player,pos:FloatPos)function} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -512,7 +512,7 @@ class mc {
  * @param {(player:Player,slotNum:number,item:Item)function} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -528,7 +528,7 @@ class mc {
  * @param {(player:Player,pos:IntPos)boolean} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)
+ function listen(event,callback)
 
 /**
  * 新增监听器
@@ -544,7 +544,7 @@ class mc {
  * @param {(player:Player)boolean} callback 事件回调
  * @returns {boolean} 是否添加成功
  */
- static listen(event,callback)  
+ function listen(event,callback)  
 
 
 

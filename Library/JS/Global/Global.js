@@ -11,7 +11,7 @@
  * @param {} data3? 
  * @returns {null} 
  */
- static log(data1,data2,data3)
+ function log(data1,data2,data3)
 
 /**
  * 输出带颜色文本
@@ -20,7 +20,7 @@
  * @param {any} data2? 
  * @returns {null} 
  */
- static colorLog(color,data1,data2)
+ function colorLog(color,data1,data2)
 
 /**
  * 推迟一段时间执行函数
@@ -28,7 +28,7 @@
  * @param {number} msec 推迟执行的时间（毫秒）
  * @returns {number} 此任务ID
  */
- static setTimeout(func,msec)
+ function setTimeout(func,msec)
 
 /**
  * 推迟一段时间执行代码段（eval）
@@ -36,7 +36,7 @@
  * @param {number} msec 推迟执行的时间（毫秒）
  * @returns {number} 此任务ID
  */
- static setTimeout(code,msec)
+ function setTimeout(code,msec)
 
 /**
  * 设置周期执行函数
@@ -44,7 +44,7 @@
  * @param {number} msec 执行间隔周期（毫秒）
  * @returns {number} 此任务ID
  */
- static setInterval(func,msec)
+ function setInterval(func,msec)
 
 /**
  * 设置周期执行代码段（eval）
@@ -52,11 +52,11 @@
  * @param {number} msec 执行间隔周期（毫秒）
  * @returns {number} 此任务ID
  */
- static setInterval(code,msec)
+ function setInterval(code,msec)
 
 /**
  * 取消延时 / 周期执行项
  * @param {number} timerid 由前几个函数返回的任务ID
  * @returns {boolean|null} 是否取消成功
  */
- static clearInterval(timerid)
+ function clearInterval(timerid)
