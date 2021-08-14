@@ -24,7 +24,9 @@ jobs:
        file-url: "https://github.com/LiteLDev-LXL/LXLDevHelper-generate/raw/master/Generate.jar"
        file-name: "Generate.jar"
     - name: Run jar
-      run: java -jar Generate.jar
+      run: |
+        rm -rf Library/*
+        java -jar Generate.jar
     - name: ls
       run: ls
     - name: zip
