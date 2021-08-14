@@ -34,7 +34,6 @@ jobs:
         dest: Library.zip
     - name: Move to folder
       run: |
-        mkdir Builds
         cp Library.zip Builds/Library.zip
         
     - name: commit
