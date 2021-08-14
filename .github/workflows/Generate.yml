@@ -24,9 +24,7 @@ jobs:
        file-url: "https://github.com/LiteLDev-LXL/LXLDevHelper-generate/raw/master/Generate.jar"
        file-name: "Generate.jar"
     - name: Run jar
-      run: |
-        rm -rf Library/*
-        java -jar Generate.jar
+      run: java -jar Generate.jar
     - name: ls
       run: ls
     - name: zip
@@ -36,16 +34,17 @@ jobs:
         dest: Library.zip
     - name: Move to folder
       run: |
+        mkdir Builds
         cp Library.zip Builds/Library.zip
-    - name: Commit files
+        
+    - name: commit
       run: |
-        git config --local user.email "3601594248@qq.com"
-        git config --local user.name "github-actions[bot]"
-        git add Library.zip
-        git commit -m "Add changes" -a
+        git config --global user.email 3601594248@qq.com
+        git config --global user.name moxicat
+        git add *
+        git commit -m "update" -a
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
-        repository: "LiteLDev-LXL/Update"
