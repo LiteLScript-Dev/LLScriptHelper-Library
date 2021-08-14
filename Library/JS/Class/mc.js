@@ -127,6 +127,27 @@ class mc {
  */
  function sendCmdOutput(output)
 
+/**
+ * 获取一个玩家对象
+ * @param {string} info 玩家的名字或者Xuid
+ * @returns {Player} 生成的玩家对象
+ */
+ function getPlayer(info)
+
+/**
+ * 获取所有在线玩家的列表
+ * @returns {Player[]} 在线的玩家对象列表
+ */
+ function getOnlinePlayers()
+
+/**
+ * 广播一个文本消息给所有玩家
+ * @param {string} msg 待发送的文本
+ * @param {number} type? 发送的文本消息类型，默认为0
+ * @returns {boolean} 是否成功发送
+ */
+ function broadcast(msg,type)
+
 
 
 

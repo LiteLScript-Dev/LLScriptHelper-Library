@@ -106,3 +106,21 @@ end
 ---@return boolean 是否成功执行
 function mc.sendCmdOutput(output)
 end
+
+---获取一个玩家对象
+---@param info string 玩家的名字或者Xuid
+---@return Player 生成的玩家对象
+function mc.getPlayer(info)
+end
+
+---获取所有在线玩家的列表
+---@return Player[] 在线的玩家对象列表
+function mc.getOnlinePlayers()
+end
+
+---广播一个文本消息给所有玩家
+---@param msg string 待发送的文本
+---@param type? number 发送的文本消息类型，默认为0
+---@return boolean 是否成功发送
+function mc.broadcast(msg,type)
+end
