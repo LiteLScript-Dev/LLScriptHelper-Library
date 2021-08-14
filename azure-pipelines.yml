@@ -3,14 +3,10 @@ trigger:
 
 pool:
   vmImage: windows-latest
-
-variables:
-  buildConfiguration: 'Release'
   
 steps:
 - task: GitHubComment@0
   inputs:
     gitHubConnection: 'LiteLDev-LXL'
     repositoryName: 'Commit'
-    id: '112'
     comment: 'test'
