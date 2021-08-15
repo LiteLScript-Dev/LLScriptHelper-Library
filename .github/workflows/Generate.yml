@@ -36,6 +36,7 @@ jobs:
         dest: Library.zip
     - name: Move to folder
       run: |
+        rm -rf Generate/*
         mv Library.zip Builds/Library.zip
         mv Library/* Generate
         rm -rf Library
