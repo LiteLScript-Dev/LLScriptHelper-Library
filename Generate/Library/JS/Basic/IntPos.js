@@ -1,22 +1,22 @@
 /**
  * 🎯 坐标对象
-多用来表示实体坐标等用无法用整数表示的位置
+多用来表示方块坐标等用整数表示的位置
  */ 
-class FloatPos {
+class IntPos {
   
 /**
  * x 坐标
- * @type Float
+ * @type Integer
  */ 
  x;
 /**
  * y 坐标
- * @type Float
+ * @type Integer
  */ 
  y;
 /**
  * z 坐标
- * @type Float
+ * @type Integer
  */ 
  z;
 /**
