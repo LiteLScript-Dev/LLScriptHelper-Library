@@ -1,4 +1,5 @@
----获取一个设备信息对象\n---@class Device 
+---获取一个设备信息对象
+---@class Device 
 ---@field ip String String
 ---@field avgPing Integer Integer
 ---@field avgPacketLoss Float Float

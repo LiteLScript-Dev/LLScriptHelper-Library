@@ -1,4 +1,5 @@
----💡 插件加载相关 API\n---@class lxl 
+---💡 插件加载相关 API
+---@class lxl 
  lxl = {}
 
 ---获取LiteXLoader加载器版本

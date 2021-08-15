@@ -1,4 +1,5 @@
----玩家对象\n---@class Player 
+---玩家对象
+---@class Player 
 ---@field name String String
 ---@field pos FloatPos FloatPos
 ---@field realName String String
@@ -207,6 +208,6 @@ function Player:getAllTags()
 end
 
 ---获取玩家的Abilities能力列表（来自玩家NBT）
----@return <string,any>[] 玩家所有能力信息的键 - 值对列表对象
+---@return table<string,any>[] 玩家所有能力信息的键 - 值对列表对象
 function Player:getAbilities()
 end

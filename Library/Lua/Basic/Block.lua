@@ -1,4 +1,5 @@
----方块对象\n---@class Block 
+---方块对象
+---@class Block 
 ---@field name String String
 ---@field type String String
 ---@field id Integer Integer

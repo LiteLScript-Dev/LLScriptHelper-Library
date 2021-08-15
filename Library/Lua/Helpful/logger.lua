@@ -1,4 +1,5 @@
----📅 通用日志 API\n---@class logger 
+---📅 通用日志 API
+---@class logger 
  logger = {}
 
 ---设置日志是否输出到控制台

@@ -1,2 +1,3 @@
----\n---@class Item 
+---
+---@class Item 
  Item = {}

@@ -1,4 +1,5 @@
----加载器版本对象\n---@class ObjectVersion 
+---加载器版本对象
+---@class ObjectVersion 
 ---@field major Integer Integer
 ---@field minor Integer Integer
 ---@field revision Integer Integer

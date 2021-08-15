@@ -1,2 +1,3 @@
----float\n---@class Float 
+---float
+---@class Float 
  Float = {}
