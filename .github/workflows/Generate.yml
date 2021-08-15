@@ -37,7 +37,8 @@ jobs:
     - name: Move to folder
       run: |
         mv Library.zip Builds/Library.zip
-        
+        mv Library Generate
+
     - name: commit
       run: |
         git config --global user.email 3601594248@qq.com
