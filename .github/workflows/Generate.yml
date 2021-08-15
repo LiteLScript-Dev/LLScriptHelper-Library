@@ -37,7 +37,8 @@ jobs:
     - name: Move to folder
       run: |
         mv Library.zip Builds/Library.zip
-        mv Library Generate
+        mv Library/* Generate
+        rm -rf Library
 
     - name: commit
       run: |
