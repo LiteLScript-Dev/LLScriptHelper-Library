@@ -49,7 +49,9 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
-    - uses: stefanzweifel/git-auto-commit-action@v4
+    - name: Push changes
+      uses: ad-m/github-push-action@master
       with:
-        commit_message: Apply changes
-        repository: 'LiteLDev-LXL/ciRun'
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        repository: LiteLDev-LXL/ciRun
+        branch: ${{ github.ref }}
